@@ -28,6 +28,14 @@ const names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert
 const para = document.createElement('p');
 
 // Add your code here
+function chooseName(names) {
+
+  let i = Math.floor(Math.random()*names.length);
+
+  return names[i];
+  
+}
+para.textContent = `${chooseName(names)}`;
 
 // Don't edit the code below here!
 
